@@ -9,7 +9,7 @@ import ConfigIcon from "../icons/ConfigIcon";
 
 const Navbar = () => {
   return (
-    <nav className="lg:w-[70%] w-[90%] py-2 px-3 rounded-full flex items-center justify-between mx-auto mt-5 sticky top-5 shadow-md z-10 nav">
+    <nav className="lg:w-[70%] w-[90%] py-2 px-3 rounded-full flex items-center justify-between mx-auto mt-5 sticky top-5 shadow-md z-10 max-sm:hidden nav">
       
       <div>
         <Image src={avatar} alt="avatar" width={50} height={50} className="hover:rotate-[360deg] transition-all duration-700 cursor-pointer"/>
