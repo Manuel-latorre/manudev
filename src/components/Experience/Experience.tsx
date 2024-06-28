@@ -1,4 +1,5 @@
-import Image from "next/image";import "../../app/globals.css";
+import Image from "next/image";
+import "../../app/globals.css";
 import BriefCaseIcon from "../icons/BriefCaseIcon";
 import tualo from "../../images/tualo.png";
 import diarc from "../../images/diarc.png";
@@ -15,16 +16,20 @@ import MongoDbIcon from "../icons/MongoDbIcon";
 import Link from "next/link";
 import ArrowRight from "../icons/ArrowRight";
 import Dot from "../Dot/Dot";
+import SupabaseIcon from "../icons/SupabaseIcon";
+import ChatGPTIcon from "../icons/ChatGPTIcon";
+import ExpandIcon from "../icons/ExpandIcon";
+import CarouselCards from "./CarouselCards";
 
 const Experience = () => {
   return (
-    <div className="xl:w-[60%] w-[90%] flex flex-col gap-3 mx-auto mt-32">
+    <div className="lg:w-[70%] w-[90%] flex flex-col gap-3 mx-auto mt-32">
       <div className="flex items-center gap-1">
         <BriefCaseIcon />
         <p className="text-blue-200 font-semibold text-2xl">Experiencia</p>
       </div>
-      <div className="flex items-center gap-3 w-full">
-        <div className="w-[50%] h-[400px] rounded-3xl p-3 flex flex-col justify-between bgCard">
+      <div className="flex items-center gap-3 w-full max-xl:hidden">
+        <div className="w-[50%] h-[400px] max-2xl:h-[450px] rounded-3xl p-3 flex flex-col bgCardTualoDash">
           <div className="bgText p-2 rounded-xl flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Image
@@ -36,50 +41,66 @@ const Experience = () => {
               />
               <p className="text-white font-medium text-xl">Tualo</p>
             </div>
+            <div className="flex items-center gap-2">
+              <Dot />
+              <p className="font-medium text-white">Fullstack Developer</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 mt-5">
+            <div className="flex items-center gap-2">
+              <MexicoIcon />
+              <p className="font-medium text-white">México</p>
+              <span className="text-blue-200 font-bold">|</span>
             <p className="font-medium text-white">Mayo 2024 - Actual</p>
+            </div>
           </div>
-          <div className="flex items-center gap-2 px-2 my-5">
-            <MexicoIcon />
-            <p className="font-medium text-white">México</p>
-          </div>
-        <div className="flex items-center gap-2">
-            <Dot/>
-            <p className="font-medium text-white">Fullstack Developer</p>
-        </div>
-          <div className="px-2">
+
+          <div className="px-2 mt-5">
             <p className="text-zinc-200">
               Se trata de un avanzado Dashboard diseñado específicamente para
               los clientes de Tualo. Esta innovadora plataforma está dividida en
               dos secciones principales: una para administradores y otra para
-              clientes.{" "}
-              <span className="underline text-sm text-blue-200">Ver más</span>
+              clientes.
             </p>
           </div>
-
-          <div>
-            <Link href={""} className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center">
-                Visitar
-                <ArrowRight/>
-            </Link>
+          <div className="mt-5 flex flex-col gap-4">
+            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
+              Más información
+              <ExpandIcon />
+            </button>
           </div>
-
-          <div className="flex items-center gap-2 mt-3 text-zinc-300">
-            <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
+          <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
+            <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
               <TypescriptIcon />
               <p>Typescript</p>
             </div>
-            <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
+            <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
               <NextIcon />
               <p>Next Js</p>
             </div>
-            <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
+            <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
               <TailwindIcon />
               <p>Tailwind css</p>
+            </div>
+
+            <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
+              <NodeIcon />
+              <p>Node Js</p>
+            </div>
+
+            <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
+              <SupabaseIcon />
+              <p>Supabase</p>
+            </div>
+
+            <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
+              <ChatGPTIcon />
+              <p>Open AI</p>
             </div>
           </div>
         </div>
 
-        <div className="w-[50%] h-[400px] rounded-3xl p-3 flex flex-col justify-between bgCard">
+        <div className="w-[50%] h-[400px] max-2xl:h-[450px] rounded-3xl p-3 flex flex-col bgCardTualo">
           <div className="bgText p-2 rounded-xl flex items-center justify-between">
             <div className=" flex items-center gap-2">
               <Image
@@ -89,38 +110,48 @@ const Experience = () => {
                 alt="tualo"
                 className="rounded-md"
               />
-              <p className="text-white font-medium text-xl">
-                Tualo Landing Page
-              </p>
+              <p className="text-white font-medium text-xl">Tualo Web</p>
             </div>
+            <div className="flex items-center gap-2">
+              <Dot />
+              <p className="font-medium text-white">Frontend Developer</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2 mt-5">
+            <div className="flex items-center gap-2 px-2">
+              <MexicoIcon />
+              <p className="font-medium text-white">México</p>
+              <span className="text-blue-200 font-bold">|</span>
             <p className="font-medium text-white">Mayo 2024</p>
+            </div>
           </div>
-          <div className="flex items-center gap-2 px-2 my-5">
-            <MexicoIcon />
-            <p className="font-medium text-white">México</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Dot/>
-            <p className="font-medium text-white">Frontend Developer</p>
-        </div>
-          <div className="px-2">
+
+          <div className="px-2 mt-5">
             <p className="text-zinc-200">
               He desarrollado este sitio web para Tualo, una empresa que se
               dedica al asesoramiento financiero. Esta Landing Page fue
               desarrollada con el fin de que la compañia pueda ofrecer sus
-              servicios de una forma mas atractiva.{" "}
-              <span className="underline text-sm text-blue-200">Ver más</span>
+              servicios de una forma mas atractiva.
             </p>
           </div>
 
-          <div>
-            <Link href={""} className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center">
-                Visitar
-                <ArrowRight/>
+          <div className="flex flex-col gap-4 mt-5">
+            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
+              Acerca del proyecto
+              <ExpandIcon />
+            </button>
+            <Link
+              href={""}
+              className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center"
+            >
+              Visitar
+              <ArrowRight />
             </Link>
           </div>
 
-          <div className="flex items-center gap-2 mt-3 text-zinc-300">
+
+          <div className="flex items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
             <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
               <TypescriptIcon />
               <p>Typescript</p>
@@ -136,8 +167,8 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-3 w-full">
-        <div className="w-[50%] h-[400px] rounded-3xl p-3 flex flex-col justify-between bgCard">
+      <div className="flex items-center gap-3 w-full max-xl:hidden">
+        <div className="w-[50%] h-[400px] max-2xl:h-[450px] rounded-3xl p-3 flex flex-col bgCardDiarc">
           <div className="bgText p-2 rounded-xl flex items-center justify-between">
             <div className=" flex items-center gap-2">
               <Image
@@ -149,33 +180,41 @@ const Experience = () => {
               />
               <p className="text-white font-medium text-xl">Diarc Studio</p>
             </div>
-            <p className="font-medium text-white">Abril 2024 - Mayo 2024</p>
-          </div>
-          <div className="flex items-center gap-2 px-2 my-5">
-            <ArgentinaIcon />
-            <p className="font-medium text-white">Argentina</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Dot/>
-            <p className="font-medium text-white">Fullstack Developer</p>
-        </div>
-          <div className="px-2">
-            <p className="text-zinc-200">
-              He desarrollado este sitio web para Diarc Studio, un estudio de
-              Outsourcing de Arte 3D enfocado en el desarrollo de Experiencias
-              Inmersivas, Metaversos y Gaming.{" "}
-              <span className="underline text-sm text-blue-200">Ver más</span>
-            </p>
+            <div className="flex items-center gap-2">
+              <Dot />
+              <p className="font-medium text-white">Fullstack Developer</p>
+            </div>
           </div>
 
-          <div>
-            <Link href={""} className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center">
-                Visitar
-                <ArrowRight/>
+          <div className="flex flex-col gap-2 mt-5">
+            <div className="flex items-center gap-2 px-2">
+              <ArgentinaIcon />
+              <p className="font-medium text-white">Argentina</p>
+              <span className="text-blue-200 font-bold">|</span>
+              <p className="font-medium text-white">Abril 2024 - Mayo 2024</p>
+            </div>
+            <div className="flex items-center gap-2 px-2">
+              <Dot />
+              <p className="font-medium text-white">Freelance</p>
+            </div>
+          </div>
+          
+
+          <div className="flex flex-col gap-4 mt-5">
+            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
+              Acerca del proyecto
+              <ExpandIcon />
+            </button>
+            <Link
+              href={""}
+              className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center"
+            >
+              Visitar
+              <ArrowRight />
             </Link>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300">
+          <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
             <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
               <TypescriptIcon />
               <p>Typescript</p>
@@ -207,7 +246,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="w-[50%] h-[400px] rounded-3xl p-3 flex flex-col justify-between bgCard">
+        <div className="w-[50%] h-[400px] max-2xl:h-[450px] rounded-3xl p-3 flex flex-col bgCardTma">
           <div className="bgText p-2 rounded-xl flex items-center justify-between">
             <div className=" flex items-center gap-2">
               <Image
@@ -215,23 +254,27 @@ const Experience = () => {
                 height={35}
                 src={tma}
                 alt="Tu mejor amigo"
-                className="rounded-md"
+                className="rounded-md bg-[#827AB6]"
               />
               <p className="text-white font-medium text-xl">Tu Mejor Amigo</p>
             </div>
-            <p className="font-medium text-white">
-              Noviembre 2023 - Marzo 2024
-            </p>
+            <div className="flex items-center gap-2 px-2">
+              <Dot />
+              <p className="font-medium text-white">Frontend Developer</p>
+            </div>
           </div>
-          <div className="flex items-center gap-2 px-2 my-5">
-            <MexicoIcon />
-            <p className="font-medium text-white">México</p>
+          <div className="flex flex-col gap-2 mt-5">
+            <div className="flex items-center gap-2 px-2">
+              <MexicoIcon />
+              <p className="font-medium text-white">México</p>
+              <span className="text-blue-200 font-bold">|</span>
+              <p className="font-medium text-white">
+                Noviembre 2023 - Marzo 2024
+              </p>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <Dot/>
-            <p className="font-medium text-white">Frontend Developer</p>
-        </div>
-          <div className="px-2">
+
+          <div className="px-2 mt-5">
             <p className="text-zinc-200">
               He contribuido significativamente al desarrollo de una innovadora
               aplicación de servicio de paseo de perros, enfocándome en la
@@ -240,14 +283,14 @@ const Experience = () => {
             </p>
           </div>
 
-          <div>
-            <Link href={""} className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center">
-                Visitar
-                <ArrowRight/>
-            </Link>
+          <div className="flex flex-col gap-4 mt-5">
+            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
+              Acerca del proyecto
+              <ExpandIcon />
+            </button>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300">
+          <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
             <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
               <TypescriptIcon />
               <p>Typescript</p>
@@ -279,6 +322,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
+      <CarouselCards/>
     </div>
   );
 };

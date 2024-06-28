@@ -17,13 +17,138 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.bgCard{
+.bgCardTualo{
    backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(39, 39, 39, 0.419);
     border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius:24px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
+
+.bgCardTualo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -75%; /* Inicialmente fuera del contenedor */
+  bottom: 0;
+  width: 70%; /* Asegura que la imagen sea más grande que el contenedor */
+  background-image: url(../images/tualo-landing.png);
+  background-size: cover; /* Ajusta para que la imagen cubra el pseudo-elemento */
+  background-repeat: no-repeat;
+  transition: right 0.5s ease-in-out; /* Ajusta la duración y la función de temporización según tus necesidades */
+  z-index: -10;
+  opacity: 0.4;
+}
+
+.bgCardTualo:hover::after {
+  right: -10%; /* Mueve el pseudo-elemento parcialmente dentro del contenedor */
+}
+
+
+.bgCardTualoDash{
+  backdrop-filter: blur(16px) saturate(180%);
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+   background-color: rgba(39, 39, 39, 0.419);
+   border: 1px solid rgba(255, 255, 255, 0.125);
+   border-radius:24px;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+
+.bgCardTualoDash::after {
+ content: "";
+ position: absolute;
+ top: 0;
+ right: -75%; /* Inicialmente fuera del contenedor */
+ bottom: 0;
+ width: 70%; /* Asegura que la imagen sea más grande que el contenedor */
+ background-image: url(../images/tualodash.png);
+ background-size: cover; /* Ajusta para que la imagen cubra el pseudo-elemento */
+ background-repeat: no-repeat;
+ transition: right 0.5s ease-in-out; /* Ajusta la duración y la función de temporización según tus necesidades */
+ z-index: -10;
+ opacity: 0.4;
+}
+
+.bgCardTualoDash:hover::after {
+ right: -10%; /* Mueve el pseudo-elemento parcialmente dentro del contenedor */
+}
+
+
+.bgCardDiarc{
+  backdrop-filter: blur(16px) saturate(180%);
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+   background-color: rgba(39, 39, 39, 0.419);
+   border: 1px solid rgba(255, 255, 255, 0.125);
+   border-radius:24px;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+
+.bgCardDiarc::after {
+ content: "";
+ position: absolute;
+ top: 0;
+ right: -75%; /* Inicialmente fuera del contenedor */
+ bottom: 0;
+ width: 70%; /* Asegura que la imagen sea más grande que el contenedor */
+ background-image: url(../images/diarc-landing.png);
+ background-size: cover; /* Ajusta para que la imagen cubra el pseudo-elemento */
+ background-repeat: no-repeat;
+ transition: right 0.5s ease-in-out; /* Ajusta la duración y la función de temporización según tus necesidades */
+ z-index: -10;
+ opacity: 0.4;
+}
+
+.bgCardDiarc:hover::after {
+ right: -10%; /* Mueve el pseudo-elemento parcialmente dentro del contenedor */
+}
+
+
+.bgCardTma{
+  backdrop-filter: blur(16px) saturate(180%);
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+   background-color: rgba(39, 39, 39, 0.419);
+   border: 1px solid rgba(255, 255, 255, 0.125);
+   border-radius:24px;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+
+.bgCardTma::after {
+ content: "";
+ position: absolute;
+ top: 0;
+ right: -75%; /* Inicialmente fuera del contenedor */
+ bottom: 0;
+ width: 70%; /* Asegura que la imagen sea más grande que el contenedor */
+ background-image: url(../images/tma-app.png);
+ background-size: cover; /* Ajusta para que la imagen cubra el pseudo-elemento */
+ background-repeat: no-repeat;
+ transition: right 0.5s ease-in-out; /* Ajusta la duración y la función de temporización según tus necesidades */
+ z-index: -10;
+ opacity: 0.4;
+}
+
+.bgCardTma:hover::after {
+ right: -10%; /* Mueve el pseudo-elemento parcialmente dentro del contenedor */
+}
+
+
+
+
+
+
+
+
+
+
 
 .bgText{
     border: 1px solid rgba(255, 255, 255, 0.125);

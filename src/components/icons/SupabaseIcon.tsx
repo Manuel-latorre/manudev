@@ -10,7 +10,7 @@ const SupabaseIcon = () => {
       height={20}
     >
       <g
-        fill="#000000"
+        fill="#f0f0f0"
         fill-rule="nonzero"
         stroke="none"
         stroke-width="1"
