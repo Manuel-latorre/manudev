@@ -41,7 +41,7 @@ const CarouselCards = () => {
                 />
                 <p className="text-white font-medium text-xl">Tualo</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 max-md:hidden">
                 <Dot />
                 <p className="font-medium text-white">Fullstack Developer</p>
               </div>
@@ -53,9 +53,13 @@ const CarouselCards = () => {
                 <span className="text-blue-200 font-bold">|</span>
                 <p className="font-medium text-white">Mayo 2024 - Actual</p>
               </div>
+              <div className="flex items-center gap-2 md:hidden">
+                    <Dot />
+                <p className="font-medium text-white">Fullstack Developer</p>
+              </div>
             </div>
 
-            <div className="px-2 mt-5">
+            <div className="px-2 mt-5 max-md:hidden">
               <p className="text-zinc-200">
                 Se trata de un avanzado Dashboard diseñado específicamente para
                 los clientes de Tualo. Esta innovadora plataforma está dividida
@@ -69,7 +73,7 @@ const CarouselCards = () => {
                 <ExpandIcon />
               </button>
             </div>
-            <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
+            <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1 max-md:justify-center">
               <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
                 <TypescriptIcon />
                 <p>Typescript</p>
@@ -114,7 +118,7 @@ const CarouselCards = () => {
                 />
                 <p className="text-white font-medium text-xl">Tualo Web</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 max-md:hidden">
                 <Dot />
                 <p className="font-medium text-white">Frontend Developer</p>
               </div>
@@ -127,9 +131,13 @@ const CarouselCards = () => {
                 <span className="text-blue-200 font-bold">|</span>
                 <p className="font-medium text-white">Mayo 2024</p>
               </div>
+              <div className="flex items-center gap-2 md:hidden">
+                <Dot />
+                <p className="font-medium text-white">Frontend Developer</p>
+              </div>
             </div>
 
-            <div className="px-2 mt-5">
+            <div className="px-2 mt-5 max-md:hidden">
               <p className="text-zinc-200">
                 He desarrollado este sitio web para Tualo, una empresa que se
                 dedica al asesoramiento financiero. Esta Landing Page fue
@@ -152,7 +160,7 @@ const CarouselCards = () => {
               </Link>
             </div>
 
-            <div className="flex items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
+            <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1 max-md:justify-center">
               <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
                 <TypescriptIcon />
                 <p>Typescript</p>
@@ -182,7 +190,7 @@ const CarouselCards = () => {
                 />
                 <p className="text-white font-medium text-xl">Diarc Studio</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 max-md:hidden">
                 <Dot />
                 <p className="font-medium text-white">Fullstack Developer</p>
               </div>
@@ -193,7 +201,11 @@ const CarouselCards = () => {
                 <ArgentinaIcon />
                 <p className="font-medium text-white">Argentina</p>
                 <span className="text-blue-200 font-bold">|</span>
-                <p className="font-medium text-white">Abril 2024 - Mayo 2024</p>
+                <p className="font-medium text-white max-md:text-sm">Abril 2024 - Mayo 2024</p>
+              </div>
+              <div className="flex items-center gap-2 px-2 md:hidden">
+                <Dot />
+                <p className="font-medium text-white">Fullstack Developer</p>
               </div>
               <div className="flex items-center gap-2 px-2">
                 <Dot />
@@ -215,7 +227,7 @@ const CarouselCards = () => {
               </Link>
             </div>
 
-            <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
+            <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1 max-md:justify-center">
               <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
                 <TypescriptIcon />
                 <p>Typescript</p>
@@ -261,7 +273,7 @@ const CarouselCards = () => {
               />
               <p className="text-white font-medium text-xl">Tu Mejor Amigo</p>
             </div>
-            <div className="flex items-center gap-2 px-2">
+            <div className="flex items-center gap-2 px-2 max-md:hidden">
               <Dot />
               <p className="font-medium text-white">Frontend Developer</p>
             </div>
@@ -271,18 +283,22 @@ const CarouselCards = () => {
               <MexicoIcon />
               <p className="font-medium text-white">México</p>
               <span className="text-blue-200 font-bold">|</span>
-              <p className="font-medium text-white">
-                Noviembre 2023 - Marzo 2024
+              <p className="font-medium text-white max-md:text-sm">
+                Nov 2023 - Marzo 2024
               </p>
+            </div>
+            <div className="flex items-center gap-2 px-2 md:hidden">
+              <Dot />
+              <p className="font-medium text-white">Frontend Developer</p>
             </div>
           </div>
 
-          <div className="px-2 mt-5">
+          <div className="px-2 mt-5 max-md:hidden">
             <p className="text-zinc-200">
               He contribuido significativamente al desarrollo de una innovadora
               aplicación de servicio de paseo de perros, enfocándome en la
-              creación de interfaces de usuario intuitivas y atractivas.{" "}
-              <span className="underline text-sm text-blue-200">Ver más</span>
+              creación de interfaces de usuario intuitivas y atractivas.
+              
             </p>
           </div>
 
@@ -293,7 +309,7 @@ const CarouselCards = () => {
             </button>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
+          <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1 max-md:justify-center">
             <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
               <TypescriptIcon />
               <p>Typescript</p>

@@ -65,7 +65,7 @@ const Experience = () => {
           </div>
           <div className="mt-5 flex flex-col gap-4">
             <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
-              Más información
+              Acerca del proyecto
               <ExpandIcon />
             </button>
           </div>
@@ -278,8 +278,7 @@ const Experience = () => {
             <p className="text-zinc-200">
               He contribuido significativamente al desarrollo de una innovadora
               aplicación de servicio de paseo de perros, enfocándome en la
-              creación de interfaces de usuario intuitivas y atractivas.{" "}
-              <span className="underline text-sm text-blue-200">Ver más</span>
+              creación de interfaces de usuario intuitivas y atractivas.
             </p>
           </div>
 
