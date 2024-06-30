@@ -17,6 +17,19 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.bgModal{
+  backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(39, 39, 39, 0.419);
+}
+
+.bgCardModal{
+  background-image: url(../images/1.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bgCardTualo{
    backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);

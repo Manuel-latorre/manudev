@@ -1,5 +1,4 @@
-import Image from "next/image";
-import "../../app/globals.css";
+import Image from "next/image";import "../../app/globals.css";
 import BriefCaseIcon from "../icons/BriefCaseIcon";
 import tualo from "../../images/tualo.png";
 import diarc from "../../images/diarc.png";
@@ -20,6 +19,10 @@ import SupabaseIcon from "../icons/SupabaseIcon";
 import ChatGPTIcon from "../icons/ChatGPTIcon";
 import ExpandIcon from "../icons/ExpandIcon";
 import CarouselCards from "./CarouselCards";
+import Modal from "./Modal";
+import RedirectProjectIcon from "../icons/RedirectProjectIcon";
+
+
 
 const Experience = () => {
   return (
@@ -51,7 +54,7 @@ const Experience = () => {
               <MexicoIcon />
               <p className="font-medium text-white">México</p>
               <span className="text-blue-200 font-bold">|</span>
-            <p className="font-medium text-white">Mayo 2024 - Actual</p>
+              <p className="font-medium text-white">Mayo 2024 - Actual</p>
             </div>
           </div>
 
@@ -60,15 +63,58 @@ const Experience = () => {
               Se trata de un avanzado Dashboard diseñado específicamente para
               los clientes de Tualo. Esta innovadora plataforma está dividida en
               dos secciones principales: una para administradores y otra para
-              clientes.
+              clientes.{" "}
+              <Modal
+                title="Tualo"
+                description={
+                  <div className="mt-3 flex flex-col gap-4 text-zinc-300">
+                    <p>
+                      Se trata de un avanzado Dashboard diseñado específicamente
+                      para los clientes de Tualo. Esta innovadora plataforma
+                      está dividida en dos secciones principales: una para
+                      administradores y otra para clientes. Los administradores
+                      pueden generar reportes mensuales de las empresas clientas
+                      mediante la integración de inteligencia artificial ChatGPT
+                      y desde la perspectiva de los clientes, la plataforma
+                      ofrece una experiencia de usuario intuitiva y accesible,
+                      permitiéndoles visualizar y analizar los informes
+                      generados por los administradores.
+                    </p>
+
+                    <div className="flex flex-col gap-5">
+                      <p className="font-medium text-lg text-blue-200">
+                        Mis tareas
+                      </p>
+
+                      <ul className="list-disc flex flex-col gap-4 px-2">
+                        <li>
+                          Me encargo de diversas tareas esenciales, como el
+                          diseño y desarrollo de la interfaz de usuario para
+                          toda la plataforma. Esto incluye crear un entorno
+                          visualmente atractivo y fácil de navegar que mejore la
+                          experiencia del usuario.
+                        </li>
+                        <li>
+                          También realizo interacciones complejas con la base de
+                          datos para habilitar distintas funcionalidades del
+                          sitio, asegurando que la información sea gestionada y
+                          presentada de manera eficiente.
+                        </li>
+                        <li>
+                          Además, he integrado formularios que permiten la carga
+                          de diversos tipos de archivos, como imágenes y
+                          documentos PDF, facilitando así la incorporación y
+                          gestión de documentos importantes por parte de los
+                          usuarios.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                }
+              />
             </p>
           </div>
-          <div className="mt-5 flex flex-col gap-4">
-            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
-              Acerca del proyecto
-              <ExpandIcon />
-            </button>
-          </div>
+
           <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
             <div className="bgText flex items-center gap-2 px-2.5 py-1 rounded-2xl">
               <TypescriptIcon />
@@ -123,7 +169,7 @@ const Experience = () => {
               <MexicoIcon />
               <p className="font-medium text-white">México</p>
               <span className="text-blue-200 font-bold">|</span>
-            <p className="font-medium text-white">Mayo 2024</p>
+              <p className="font-medium text-white">Mayo 2024</p>
             </div>
           </div>
 
@@ -132,24 +178,43 @@ const Experience = () => {
               He desarrollado este sitio web para Tualo, una empresa que se
               dedica al asesoramiento financiero. Esta Landing Page fue
               desarrollada con el fin de que la compañia pueda ofrecer sus
-              servicios de una forma mas atractiva.
+              servicios de una forma mas atractiva.{" "}
+              <Modal
+                title="Tualo Web"
+                description={
+                  <div className="mt-3 flex flex-col gap-4 text-zinc-300">
+                    <p>
+                      He desarrollado este sitio web para Tualo, una empresa que
+                      se dedica al asesoramiento financiero, la cual genera
+                      reportes financieros mensuales con AI, gráficas adecuadas
+                      al cliente y más. Esta Landing Page fue desarrollada con
+                      el fin de que la compañia pueda ofrecer sus servicios de
+                      una forma mas atractiva, la cual cuenta con 4 secciones en
+                      donde se detalla especificamente que es lo que la empresa
+                      ofrece. Además, este sito web está optimizado para la
+                      experiencia del usuario, con una navegación intuitiva y un
+                      diseño atractivo que capta la atención desde el primer
+                      momento. La combinación de tecnología avanzada y un
+                      enfoque centrado en el cliente hace de Tualo una opción
+                      ideal para empresas que buscan mejorar su gestión
+                      financiera a través de soluciones innovadoras y efectivas.
+                    </p>
+                  </div>
+                }
+              />
             </p>
           </div>
 
           <div className="flex flex-col gap-4 mt-5">
-            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
-              Acerca del proyecto
-              <ExpandIcon />
-            </button>
             <Link
               href={""}
               className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center"
             >
               Visitar
-              <ArrowRight />
+              <RedirectProjectIcon/>
             </Link>
+            
           </div>
-
 
           <div className="flex items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
             <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
@@ -198,20 +263,52 @@ const Experience = () => {
               <p className="font-medium text-white">Freelance</p>
             </div>
           </div>
-          
 
           <div className="flex flex-col gap-4 mt-5">
-            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
-              Acerca del proyecto
-              <ExpandIcon />
-            </button>
-            <Link
-              href={""}
-              className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[100px] justify-center"
-            >
-              Visitar
-              <ArrowRight />
-            </Link>
+            <p className="text-zinc-200">He desarrollado este sitio web para Tualo, una empresa que se
+                dedica al asesoramiento financiero. Esta Landing Page fue
+                desarrollada con el fin de que la compañia pueda ofrecer sus
+                servicios de una forma mas atractiva. <Modal
+              title="Diarc Studio"
+              description={
+                <div className="mt-3 flex flex-col gap-4 text-zinc-300">
+                  <p>
+                    He desarrollado este sitio web para Diarc Studio, un estudio
+                    de Outsourcing de Arte 3D enfocado en el desarrollo de
+                    Experiencias Inmersivas, Metaversos y Gaming. Este sitio
+                    cuenta con 4 secciones en donde se muestran distintos tipos
+                    de información de la compañía. La sección Portfolio es donde
+                    se muestran los proyectos de la compañía. Para esto integré
+                    un sistema de administrador con tecnologías como Mongo DB
+                    para almacenar los proyectos en la base de datos y
+                    Cloudinary para el alojamiento de archivos multimedia. En
+                    este se pueden agregar, editar y eliminar proyectos.
+                  </p>
+
+                  <div className="flex flex-col gap-5">
+                    <p className="font-medium text-lg text-blue-200">
+                      Mis mayores desafíos
+                    </p>
+
+                    <ul className="list-disc flex flex-col gap-4 px-2">
+                      <li>
+                        Llevar a cabo correctamente las idéas del cliente.
+                      </li>
+                      <li>
+                        Realizar efectos y transiciones como el que se aprecia
+                        en el Home.
+                      </li>
+                      <li>
+                        Integrar un sistema CRUD para la administracion del
+                        portfolio de la compañia.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              }
+            /></p>
+            
+      
           </div>
 
           <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
@@ -278,16 +375,50 @@ const Experience = () => {
             <p className="text-zinc-200">
               He contribuido significativamente al desarrollo de una innovadora
               aplicación de servicio de paseo de perros, enfocándome en la
-              creación de interfaces de usuario intuitivas y atractivas.
+              creación de interfaces de usuario intuitivas y atractivas. <Modal
+              title="Tu Mejor Amigo"
+              description={
+                <div className="mt-3 flex flex-col gap-4 text-zinc-300">
+                  <p>
+                    He contribuido significativamente al desarrollo de una
+                    innovadora aplicación de servicio de paseo de perros,
+                    enfocándome en la creación de interfaces de usuario
+                    intuitivas y atractivas. Mi trabajo ha abarcado desde la
+                    implementación de funcionalidades esenciales para la gestión
+                    de datos, utilizando peticiones GET, POST, PUT y DELETE,
+                    hasta asegurar una interacción fluida con la base de datos
+                    de la aplicación.
+                  </p>
+
+                  <div className="flex flex-col gap-5">
+                    <p className="font-medium text-lg text-blue-200">
+                      Mis mayores desafíos
+                    </p>
+
+                    <ul className="list-disc flex flex-col gap-4 px-2">
+                      <li>
+                        Integrar un sistema de notificaciones efectivo mediante
+                        React Native Firebase Cloud Messaging.
+                      </li>
+                      <li>
+                        Incorporación de una funcionalidad que permitió a los
+                        usuarios cargar imágenes de sus mascotas y tambien de
+                        perfil a través de Cloudinary.
+                      </li>
+                      <li>
+                        Gestionar el lanzamiento de la aplicación en Google Play
+                        Console, asegurando que el servicio estuviera accesible
+                        para los amantes de los perros buscando paseadores
+                        confiables.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              }
+            />
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 mt-5">
-            <button className="flex items-center gap-2 bgText hover:bg-zinc-700/5 rounded-lg text-zinc-200 p-2 w-[200px] justify-center">
-              Acerca del proyecto
-              <ExpandIcon />
-            </button>
-          </div>
 
           <div className="flex flex-wrap items-center gap-2 mt-3 text-zinc-300 bottom-2 absolute px-1">
             <div className="bgText flex items-center gap-2 px-2 py-1 rounded-2xl">
@@ -321,7 +452,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <CarouselCards/>
+      <CarouselCards />
     </div>
   );
 };
