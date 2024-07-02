@@ -7,8 +7,8 @@ const TechShopIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       stroke="#000000"
-      width={100}
-      height={100}
+      width={30}
+      height={30}
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
