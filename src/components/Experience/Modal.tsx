@@ -15,8 +15,9 @@ interface Props{
 const Modal = ({description, title}:Props) => {
   return (
     <Dialog>
-      <DialogTrigger className="text-blue-200 underline">
-        Ver más
+      <DialogTrigger className="flex items-center gap-2 bg-white rounded-lg p-2 text-[#14192E]">
+        Acerca del puesto
+        <ExpandIcon/>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
