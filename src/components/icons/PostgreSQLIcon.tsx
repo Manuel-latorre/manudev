@@ -2,7 +2,7 @@ import React from "react";
 
 const PostgreSQLIcon = () => {
   return (
-    <svg width={20} height={20} fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <svg width={20} height={20} fill="#f0f0f0" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
         id="SVGRepo_tracerCarrier"

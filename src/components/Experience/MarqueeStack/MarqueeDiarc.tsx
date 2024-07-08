@@ -1,5 +1,6 @@
 import ChatGPTIcon from "@/components/icons/ChatGPTIcon";
 import CloudinaryIcon from "@/components/icons/CloudinaryIcon";
+import CSSIcon from "@/components/icons/CSSIcon";
 import ExpressIcon from "@/components/icons/ExpressIcon";
 import MongoDbIcon from "@/components/icons/MongoDbIcon";
 import NextIcon from "@/components/icons/NextIcon";
@@ -19,6 +20,10 @@ const reviews = [
   {
     name: "Next Js",
     icon: <NextIcon/>
+  },
+  {
+    name: "CSS",
+    icon: <CSSIcon/>
   },
   {
     name: "Tailwind css",

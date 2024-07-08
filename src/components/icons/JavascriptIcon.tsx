@@ -5,7 +5,7 @@ const JavascriptIcon = () => {
     <svg
     width={20}
     height={20}
-      fill="#000000"
+      fill="#f0f0f0"
       viewBox="0 0 24 24"
       role="img"
       xmlns="http://www.w3.org/2000/svg"

@@ -9,6 +9,12 @@ import React from "react";
 import { MarqueeStack } from "../MarqueeStack";
 import { MarqueeTualo } from "../MarqueeStack/MarqueeTualo";
 import Modal from "../Modal";
+import TypescriptIcon from "@/components/icons/TypescriptIcon";
+import NextIcon from "@/components/icons/NextIcon";
+import CSSIcon from "@/components/icons/CSSIcon";
+import TailwindIcon from "@/components/icons/TailwindIcon";
+import SupabaseIcon from "@/components/icons/SupabaseIcon";
+import ChatGPTIcon from "@/components/icons/ChatGPTIcon";
 
 const CardTaulo = () => {
   return (
@@ -76,7 +82,7 @@ const CardTaulo = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col gap-4 mt-12 text-base">
+                <div className="flex flex-col gap-4 mt-12 text-base mb-5">
                     <p>
                         Actualmente estoy trabajando como Desarrollador Fullstack en Tualo, una empresa que se
                         dedica al asesoramiento financiero, la cual genera reportes
@@ -90,12 +96,43 @@ const CardTaulo = () => {
                     <p>En este proyecto, me encargo de diversas tareas esenciales, como el desarrollo de la interfaz de usuario para toda la plataforma. También realizo interacciones complejas con la base de datos para habilitar distintas funcionalidades del sitio. <br /> Además, he integrado formularios que permiten la carga de diversos tipos de archivos, como imágenes, documentos PDF y documentos de Excel, facilitando así la incorporación y gestión de documentos importantes por parte de los usuarios.</p>
                     <p>Por otra parte, también participé en la integración de la pasarela de pago para manejar las subscripciones de los clientes. </p>
                 </div>
+
+                  <p className="text-xl text-[#f0f0f0] font-semibold">
+                    Tecnologías utilizadas
+                  </p>
+
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <div className="text-sm font-medium text-[#f0f0f0] flex items-center gap-2 px-2 py-1 nav rounded-full">
+                        <TypescriptIcon/>
+                        Typescript
+                    </div>
+                    <div className="text-sm font-medium text-[#f0f0f0] flex items-center gap-2 px-2 py-1 nav rounded-full">
+                        <NextIcon/>
+                        Next Js
+                    </div>
+                    <div className="text-sm font-medium text-[#f0f0f0] flex items-center gap-2 px-2 py-1 nav rounded-full">
+                        <CSSIcon/>
+                        CSS
+                    </div>
+                    <div className="text-sm font-medium text-[#f0f0f0] flex items-center gap-2 px-2 py-1 nav rounded-full">
+                        <TailwindIcon/>
+                        Tailwind css
+                    </div>
+                    <div className="text-sm font-medium text-[#f0f0f0] flex items-center gap-2 px-2 py-1 nav rounded-full">
+                        <SupabaseIcon/>
+                        Supabase
+                    </div>
+                    <div className="text-sm font-medium text-[#f0f0f0] flex items-center gap-2 px-2 py-1 nav rounded-full">
+                        <ChatGPTIcon/>
+                        Open AI
+                    </div>
+                  </div>
               </div>
             }
           />
         </div>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 borderBlur">
         <MarqueeTualo />
       </div>
     </div>
