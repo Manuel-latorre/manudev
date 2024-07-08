@@ -7,6 +7,7 @@ import LinkedinOutlineIcon from '../icons/LinkedinOutlineIcon'
 import CVIcon from '../icons/CVIcon'
 import GmailIcon from '../icons/GmailIcon'
 
+
 const AboutMe = () => {
   return (
     <div className='flex flex-col gap-2 lg:w-[70%] w-[90%] mx-auto mt-32'>

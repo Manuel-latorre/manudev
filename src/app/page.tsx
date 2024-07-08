@@ -2,14 +2,14 @@ import AboutMe from '@/components/AboutMe/AboutMe';
 import './globals.css'
 import ContactForWork from '@/components/ContactForWork/ContactForWork';
 import Projects from '@/components/Projects/Projects';
-import { ExperienceBentoDemo } from '@/components/Experience/ExperienceBentoGrid';
+import Experience from '@/components/Experience/Experience';
 
 
 export default function Home() {
   return (
     <div>
       <AboutMe/>
-      <ExperienceBentoDemo/>
+      <Experience/>
       <ContactForWork/>
       <Projects/>
     </div>

@@ -4,7 +4,7 @@ import tualo from '../../images/tualo.png'
 
 const TualoIcon = ({className}:any) => {
   return (
-    <Image src={tualo} alt='Tualo' className={className}/>
+    <Image src={tualo} alt='Tualo' className={className} width={50} height={50}/>
   )
 }
 

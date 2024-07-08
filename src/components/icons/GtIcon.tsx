@@ -5,7 +5,7 @@ import gt from '../../images/gt.png'
 
 const GtIcon = ({className}:any) => {
   return (
-    <Image src={gt} alt='gt' className={className}/>
+    <Image src={gt} alt='gt' className={className} width={50} height={50}/>
 
   )
 }

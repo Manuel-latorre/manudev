@@ -4,7 +4,7 @@ import diarc from '../../images/diarc.png'
 
 const DiarcIcon = ({className}:any) => {
   return (
-    <Image src={diarc} alt='Tualo' className={className}/>
+    <Image src={diarc} alt='Tualo' className={className} width={50} height={50}/>
   )
 }
 
