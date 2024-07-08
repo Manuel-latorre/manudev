@@ -6,6 +6,7 @@ import React from 'react'
 import { MarqueeStack } from '../MarqueeStack'
 import DiarcIcon from '@/components/icons/DiarcIcon'
 import { MarqueeDiarc } from '../MarqueeStack/MarqueeDiarc'
+import Modal from '../Modal'
 
 const CardDiarc = () => {
   return (
@@ -33,16 +34,13 @@ const CardDiarc = () => {
                 </div>
                 <div className='flex items-center gap-2 mt-10 max-lg:flex-col'>
                     <div className='lg:w-[50%] w-full'>
-                        <Link href={""} className='flex items-center gap-2 rounded-xl p-2 justify-center text-[#f0f0f0] hover:bg-slate-400/10 transition-all nav'>
+                        <Link href={"https://www.diarc.studio/"} className='flex items-center gap-2 rounded-xl p-2 justify-center text-[#f0f0f0] hover:bg-slate-400/10 transition-all nav'>
                             Visitar
                             <SquareArrowOutUpRightIcon width={18} height={18}/>
                         </Link>
                     </div>
                     <div className='lg:w-[50%] w-full'>
-                        <Link href={""} className='flex items-center gap-2 rounded-xl p-2 justify-center text-[#f0f0f0] hover:bg-slate-400/10 transition-all nav'>
-                            Acerca del puesto
-                            <MaximizeIcon width={18} height={18}/>
-                        </Link>
+                        <Modal description={<div><p>hola</p></div>}/>
                     </div>
                 </div>
                 <div className='mt-8'>

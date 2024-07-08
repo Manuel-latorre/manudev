@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { MarqueeDiarc } from '../MarqueeStack/MarqueeDiarc'
 import { MarqueeTma } from '../MarqueeStack/MarqueeTma'
+import Modal from '../Modal'
 
 const CardTma = () => {
   return (
@@ -36,10 +37,7 @@ const CardTma = () => {
                         </Link>
                     </div>
                     <div className='w-full'>
-                        <Link href={""} className='flex items-center gap-2 rounded-xl p-2 justify-center text-[#f0f0f0] hover:bg-slate-400/10 transition-all nav'>
-                            Acerca del puesto
-                            <MaximizeIcon width={18} height={18}/>
-                        </Link>
+                        <Modal description={<div><p>hola</p></div>}/>
                     </div>
                 </div>
                 <div className='mt-8'>
