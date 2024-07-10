@@ -10,9 +10,9 @@ import GithubIcon from '../icons/GithubIcon'
 
 const Footer = () => {
   return (
-    <div className='w-[70%] mx-auto flex items-center justify-between nav p-4 rounded-full mb-5'>
+    <div className='lg:w-[70%] w-[90%] mx-auto flex items-center justify-between nav p-4 rounded-full mb-5 max-sm:hidden'>
         <div>
-            <Image src={avatar} alt="avatar" width={100} height={100} className="hover:rotate-[360deg] transition-all duration-700 cursor-pointer"/>
+            <Image src={avatar} alt="avatar" width={100} height={100} className="hover:rotate-[360deg] transition-all duration-700 cursor-pointer max-lg:w-[70px] max-lg:h-[70px]"/>
         </div>
 
         <div className='flex items-center gap-3 text-[#f0f0f0]'>

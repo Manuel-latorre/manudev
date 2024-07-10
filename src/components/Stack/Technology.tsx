@@ -9,7 +9,7 @@ interface Props{
 const Technology = ({name, icon}:Props) => {
 
   return (
-    <div className='relative flex overflow-hidden navflex items-center justify-center text-lg gap-2 text-[#f0f0f0] font-medium p-6 rounded-lg nav w-full xl:hover:scale-x-95 transition-all'>
+    <div className='relative flex max-lg:w-[200px] overflow-hidden navflex items-center justify-center text-lg gap-2 text-[#f0f0f0] font-medium p-6 rounded-lg nav w-full xl:hover:scale-x-95 transition-all'>
         <Meteors number={30}  />
         {icon}
         {name}

@@ -15,7 +15,7 @@ import '../../../app/globals.css'
 
 const CardGt = () => {
   return (
-    <div className='w-[33.3%] h-auto rounded-xl p-3 cardExp'>
+    <div className='w-[33.3%] max-lg:w-full h-auto rounded-xl p-3 cardExp'>
                 <div className='flex items-center gap-3'>
                     <GtIcon/>
                     <div>
@@ -26,7 +26,7 @@ const CardGt = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center gap-2 flex-wrap mt-4'>
+                <div className='flex flex-col items-start gap-2 mt-4'>
                     <div className='flex items-center gap-2 rounded-full nav px-2 justify-center'>
                         <Dot/>
                         <p className='text-blue-200 font-medium text-sm'>Freelance</p>

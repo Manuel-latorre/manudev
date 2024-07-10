@@ -22,7 +22,7 @@ import MongoDbIcon from "@/components/icons/MongoDbIcon";
 
 const CardDiarc = () => {
   return (
-    <div className="w-[50%] h-auto rounded-xl p-3 cardExp">
+    <div className="w-[50%] max-lg:w-full h-auto rounded-xl p-3 cardExp">
       <div className="flex items-center gap-3">
         <DiarcIcon />
         <div>
