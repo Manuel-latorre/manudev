@@ -6,6 +6,7 @@ import RedirectIcon from "../icons/RedirectIcon";
 import Image from "next/image";
 import avatar from '../../images/avatar1.png'
 import ConfigIcon from "../icons/ConfigIcon";
+import Dropdown from "../Dropdown/Dropdown";
 
 const Navbar = () => {
   return (
@@ -35,7 +36,7 @@ const Navbar = () => {
           </div>
         </Link>
         
-        <ConfigIcon className="group-hover:hidden" />
+        <Dropdown/>
             
       </div>
     </nav>

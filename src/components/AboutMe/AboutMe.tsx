@@ -43,7 +43,6 @@ const AboutMe = () => {
             <RedirectIcon className="hidden group-hover:block" />
           </div>
         </Link>
-        
         <CVIcon className="group-hover:hidden" />
       </div>
         </div>
