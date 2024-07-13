@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -6,25 +8,30 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Switch } from "@/components/ui/switch"
 import ConfigIcon from "../icons/ConfigIcon";
+import { useLanguage } from "@/context/LanguageContext";
+import '../../app/globals.css'
+import { LanguagesIcon } from "lucide-react";
 
+const Dropdown: React.FC = () => {
+  const { isEnglish, switchToEnglish, switchToSpanish } = useLanguage();
 
-const Dropdown = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
         <ConfigIcon />
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuLabel>Configuración</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>
-        <div className="flex items-center space-x-2">
-      <Switch id="airplane-mode" />
-      <label htmlFor="airplane-mode">Airplane Mode</label>
-    </div>
-        </DropdownMenuItem>
+      <DropdownMenuContent className="bg-zinc-800 border-none">
+        <div className="flex flex-col gap-2">
+        <button onClick={switchToSpanish} className={`language-button ${!isEnglish ? 'bg-zinc-600 rounded-lg' : ''} flex items-center gap-2 p-2 text-white text-xs`}>
+            {/* <LanguagesIcon width={20} height={20}/> */}
+            {isEnglish ? "Spanish" : "Español"}
+        </button>
+        <button onClick={switchToEnglish} className={`language-button ${isEnglish ? 'bg-zinc-600 rounded-lg' : ''} flex items-center gap-2 p-2 text-white text-xs`}>
+            {/* <LanguagesIcon width={20} height={20}/> */}
+            {isEnglish ? "English" : "Inglés"}
+        </button>
+        </div>
       </DropdownMenuContent>
     </DropdownMenu>
   );
