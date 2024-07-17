@@ -1,3 +1,5 @@
+"use client"
+
 import Dot from "@/components/Dot/Dot";
 import TualoIcon from "@/components/icons/TualoIcon";
 import {
@@ -19,8 +21,12 @@ import NodeIcon from "@/components/icons/NodeIcon";
 import ExpressIcon from "@/components/icons/ExpressIcon";
 import CloudinaryIcon from "@/components/icons/CloudinaryIcon";
 import MongoDbIcon from "@/components/icons/MongoDbIcon";
+import { useLanguage } from "@/context/LanguageContext";
 
 const CardDiarc = () => {
+
+  const {isEnglish} = useLanguage()
+
   return (
     <div className="w-[50%] max-lg:w-full h-auto rounded-xl p-3 cardExp">
       <div className="flex items-center gap-3">
@@ -40,7 +46,7 @@ const CardDiarc = () => {
           <p className="text-blue-200 font-medium text-sm">Freelance</p>
         </div>
         <div className="flex items-center gap-2 rounded-full nav px-2 justify-center">
-          <p className="text-blue-200 text-sm font-medium">Abril - Mayo 2024</p>
+          <p className="text-blue-200 text-sm font-medium">{isEnglish ? "April - May 2024" : "Abril - Mayo 2024"}</p>
         </div>
       </div>
       <div className="flex items-center gap-2 mt-10 max-lg:flex-col">
@@ -49,7 +55,7 @@ const CardDiarc = () => {
             href={"https://www.diarc.studio/"}
             className="flex items-center gap-2 rounded-xl p-2 justify-center text-[#f0f0f0] hover:bg-slate-400/10 transition-all nav"
           >
-            Visitar
+            {isEnglish ? "Visit" : "Visitar"}
             <SquareArrowOutUpRightIcon width={18} height={18} />
           </Link>
         </div>
@@ -78,33 +84,33 @@ const CardDiarc = () => {
                   </div>
                   <div className="flex items-center gap-2 rounded-full nav px-2 justify-center">
                     <p className="text-blue-200 text-sm font-medium">
-                      Abril - Mayo 2024
+                    {isEnglish ? "April - May 2024" : "Abril - Mayo 2024"}
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 mt-12 text-base">
                   <p>
-                    He desarrollado este sitio web para Diarc Studio, un estudio de Outsourcing de Arte 3D enfocado en el desarrollo de Experiencias Inmersivas, Metaversos y Gaming. Este sitio cuenta con 4 secciones en donde se muestran distintos tipos de información de la compañía. La sección Portfolio es donde se muestran los proyectos de la compañía. Para esto integré un sistema de administrador con tecnologías como Mongo DB para almacenar los proyectos en la base de datos y Cloudinary para el alojamiento de archivos multimedia. En este se pueden agregar, editar y eliminar proyectos.
+                    {isEnglish ? "I have developed this website for Diarc Studio, a 3D Art Outsourcing studio focused on the development of immersive experiences, metaverses, and gaming. This site has four sections that display different types of company information. The Portfolio section showcases the company's projects. To achieve this, I integrated an admin system using technologies such as MongoDB to store projects in the database and Cloudinary for multimedia file hosting. In this system, projects can be added, edited, and deleted." : "He desarrollado este sitio web para Diarc Studio, un estudio de Outsourcing de Arte 3D enfocado en el desarrollo de Experiencias Inmersivas, Metaversos y Gaming. Este sitio cuenta con 4 secciones en donde se muestran distintos tipos de información de la compañía. La sección Portfolio es donde se muestran los proyectos de la compañía. Para esto integré un sistema de administrador con tecnologías como Mongo DB para almacenar los proyectos en la base de datos y Cloudinary para el alojamiento de archivos multimedia. En este se pueden agregar, editar y eliminar proyectos."}
                   </p>
 
                   <p className="text-xl text-[#f0f0f0] font-semibold">
-                    Mis mayores desafíos
+                    {isEnglish ? "My biggest challengues" : "Mis mayores desafíos"}
                   </p>
 
                   <ul className="list-disc">
                     <li>
-                        Llevar a cabo correctamente las idéas del cliente.
+                        {isEnglish ? "Successfully executing the client's ideas." : "Llevar a cabo correctamente las idéas del cliente."}
                     </li>
                     <li>
-                        Realizar efectos y transiciones como el que se aprecia en el Home.
+                        {isEnglish ? "Implementing effects and transitions like those seen on the Home page." : "Realizar efectos y transiciones como el que se aprecia en el Home."}
                     </li>
                     <li>
-                        Integrar un sistema CRUD para la administracion del portfolio de la compañia.
+                        {isEnglish ? "Integrating a CRUD system for managing the company's portfolio." :"Integrar un sistema CRUD para la administracion del portfolio de la compañia."}
                     </li>
                   </ul>
 
                   <p className="text-xl text-[#f0f0f0] font-semibold">
-                    Tecnologías utilizadas
+                    {isEnglish ? "Technologies used" : "Tecnologías utilizadas"}
                   </p>
 
                   <div className="flex items-center gap-3 flex-wrap">

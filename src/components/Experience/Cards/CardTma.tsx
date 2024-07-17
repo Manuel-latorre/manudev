@@ -1,3 +1,5 @@
+"use client"
+
 import Dot from "@/components/Dot/Dot";
 import TmaIcon from "@/components/icons/TmaIcon";
 import {
@@ -16,8 +18,12 @@ import ReactIcon from "@/components/icons/ReactIcon";
 import CSSIcon from "@/components/icons/CSSIcon";
 import FirebaseIcon from "@/components/icons/FirebaseIcon";
 import CloudinaryIcon from "@/components/icons/CloudinaryIcon";
+import { useLanguage } from "@/context/LanguageContext";
 
 const CardTma = () => {
+
+  const {isEnglish} = useLanguage()
+
   return (
     <div className="w-[33.3%] max-lg:w-full h-auto rounded-xl p-3 cardExp">
       <div className="flex items-center gap-3">
@@ -26,7 +32,7 @@ const CardTma = () => {
           <p className="text-2xl font-semibold text-blue-200">Tu Mejor Amigo</p>
           <div className="flex items-center gap-1 text-black px-2 rounded-full bg-white mt-1 w-min">
             <MapPinIcon width={12} height={12} />
-            <p className="text-xs font-medium">México</p>
+            <p className="text-xs font-medium">Mexico</p>
           </div>
         </div>
       </div>
@@ -34,12 +40,12 @@ const CardTma = () => {
         <div className="flex items-center gap-2 rounded-full nav px-2 justify-center">
           <Dot />
           <p className="text-blue-200 font-medium text-sm">
-            Desarrollador Frontend
+            {isEnglish ? "Frontend Developer" : "Desarrollador Frontend"}
           </p>
         </div>
         <div className="flex items-center gap-2 rounded-full nav px-2 justify-center">
           <p className="text-blue-200 text-sm font-medium">
-            Nov 2023 - Marzo 2024
+            {isEnglish ? "Nov 2023 - March 2024" : "Nov 2023 - Marzo 2024"}
           </p>
         </div>
       </div>
@@ -52,7 +58,7 @@ const CardTma = () => {
             target="_blank"
             className="flex items-center gap-2 rounded-xl p-2 justify-center text-[#f0f0f0] hover:bg-slate-400/10 transition-all nav"
           >
-            Visitar
+            {isEnglish ? "Visit" :"Visitar"}
             <SquareArrowOutUpRightIcon width={18} height={18} />
           </Link>
         </div>
@@ -76,44 +82,35 @@ const CardTma = () => {
                   <div className="flex items-center gap-2 rounded-full nav px-2 justify-center">
                     <Dot />
                     <p className="text-blue-200 font-medium text-sm">
-                      Desarrollador Frontend
+                      {isEnglish ? "Frontend Developer" : "Desarrollador Frontend"}
                     </p>
                   </div>
                   <div className="flex items-center gap-2 rounded-full nav px-2 justify-center">
                     <p className="text-blue-200 text-sm font-medium">
-                      Noviembre 2023 - Marzo 2024
+                      {isEnglish ? "Nov 2023 - March 2024" : "Nov 2023 - Marzo 2024"}
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 mt-12 text-base">
                   <p>
-                    En Tu Mejor Amigo he contribuido como Desarrollador
-                    Frontend, enfocándome en la creación de interfaces de
-                    usuario intuitivas y atractivas. Mi trabajo ha abarcado
-                    desde la implementación de funcionalidades esenciales para
-                    la gestión de datos, utilizando peticiones GET, POST, PUT y
-                    DELETE, hasta asegurar una interacción fluida con la base de
-                    datos de la aplicación.
+                    {isEnglish ? "At Tu Mejor Amigo, I have contributed as a Frontend Developer, focusing on creating intuitive and attractive user interfaces. My work has ranged from implementing essential functionalities for data management using GET, POST, PUT, and DELETE requests, to ensuring smooth interaction with the application's database." : "En Tu Mejor Amigo he contribuido como Desarrollador Frontend, enfocándome en la creación de interfaces de usuario intuitivas y atractivas. Mi trabajo ha abarcado desde la implementación de funcionalidades esenciales para la gestión de datos, utilizando peticiones GET, POST, PUT y DELETE, hasta asegurar una interacción fluida con la base de datos de la aplicación."}
                   </p>
 
                   <p className="text-xl text-[#f0f0f0] font-semibold">
-                    Mis mayores desafíos
+                    {isEnglish ? "My biggest challengues" : "Mis mayores desafíos"}
                   </p>
 
                   <ul className="list-disc">
                     <li>
-                      Integrar un sistema de notificaciones efectivo mediante
-                      React Native Firebase Cloud Messaging.
+                     {isEnglish ? "Integrating an effective notification system using React Native Firebase Cloud Messaging." : "Integrar un sistema de notificaciones efectivo mediante React Native Firebase Cloud Messaging."}
                     </li>
                     <li>
-                      Incorporación de una funcionalidad que permitió a los
-                      usuarios cargar imágenes de sus mascotas y tambien de
-                      perfil a través de Cloudinary.
+                      {isEnglish ? "Incorporating a feature that allowed users to upload images of their pets and profile pictures through Cloudinary." : "Incorporación de una funcionalidad que permitió a los usuarios cargar imágenes de sus mascotas y tambien de perfil a través de Cloudinary."}
                     </li>
                   </ul>
 
                   <p className="text-xl text-[#f0f0f0] font-semibold">
-                    Tecnologías utilizadas
+                    {isEnglish ? "Technologies used" : "Tecnologías utilizadas"}
                   </p>
 
                   <div className="flex items-center gap-3 flex-wrap">

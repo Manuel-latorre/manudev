@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 
+body{
+  scroll-behavior: smooth;
+}
+
+:root{
+  scroll-behavior: smooth;
+}
+
+.scrollPage{
+  scroll-behavior: smooth;
+}
+
+
 .nav{
     backdrop-filter: blur(4px) saturate(100%);
     -webkit-backdrop-filter: blur(4px) saturate(100%);

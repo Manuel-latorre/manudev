@@ -27,12 +27,12 @@ export default function RootLayout({
       <meta property="og:image" content="https://postimg.cc/zVJCzqRK" />
       <body className={`${inter.className}`}>
         <BackgroundGradientAnimation>
-          <div className="absolute z-50 inset-0 overflow-y-scroll">
+          <div className="absolute z-50 inset-0 overflow-y-scroll scrollPage">
             <LanguageProvider>
-              <Navbar />
-              <MobileMenu />
-              {children}
-              <Footer />
+                <Navbar />
+                <MobileMenu />
+                {children}
+                <Footer />
             </LanguageProvider>
           </div>
         </BackgroundGradientAnimation>

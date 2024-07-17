@@ -1,3 +1,5 @@
+"use client"
+
 import Dot from '@/components/Dot/Dot'
 import TmaIcon from '@/components/icons/TmaIcon'
 import { CalendarIcon, MapPinIcon, MaximizeIcon, SquareArrowOutUpRightIcon } from 'lucide-react'
@@ -12,8 +14,12 @@ import TypescriptIcon from '@/components/icons/TypescriptIcon'
 import NextIcon from '@/components/icons/NextIcon'
 import CSSIcon from '@/components/icons/CSSIcon'
 import '../../../app/globals.css'
+import { useLanguage } from '@/context/LanguageContext'
 
 const CardGt = () => {
+  
+  const {isEnglish} = useLanguage()
+
   return (
     <div className='w-[33.3%] max-lg:w-full h-auto rounded-xl p-3 cardExp'>
                 <div className='flex items-center gap-3'>
@@ -32,13 +38,13 @@ const CardGt = () => {
                         <p className='text-blue-200 font-medium text-sm'>Freelance</p>
                     </div>
                     <div className='flex items-center gap-2 rounded-full nav px-2 justify-center'>
-                        <p className='text-blue-200 text-sm font-medium'>Septiembre 2023</p>
+                        <p className='text-blue-200 text-sm font-medium'>{isEnglish ? "September 2023" : "Septiembre 2023"}</p>
                     </div>
                 </div>
                 <div className='flex items-center gap-2 mt-10 flex-col'>
                     <div className='w-full'>
                         <Link href={"https://www.generaciontech.com.ar/"} className='flex items-center gap-2 rounded-xl p-2 justify-center text-[#f0f0f0] hover:bg-slate-400/10 transition-all nav'>
-                            Visitar
+                            {isEnglish ? "Visit" :"Visitar"}
                             <SquareArrowOutUpRightIcon width={18} height={18}/>
                         </Link>
                     </div>
@@ -67,16 +73,16 @@ const CardGt = () => {
                   </div>
                   <div className="flex items-center gap-2 rounded-full nav px-2 justify-center">
                     <p className="text-blue-200 text-sm font-medium">
-                      Octubre 2023
+                      {isEnglish ? "September 2023" : "Septiembre 2023"}
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 mt-5 text-base">
                     <p>
-                        He desarrollado este sitio web para Generación Tech, Una agencia de Marketing digital.
+                        {isEnglish ? "I have developed this website for Generación Tech, a digital marketing agency." : "He desarrollado este sitio web para Generación Tech, Una agencia de Marketing digital."}
                     </p>
                   <p className="text-xl text-[#f0f0f0] font-semibold">
-                    Tecnologías utilizadas
+                    {isEnglish ? "Technologies used" :"Tecnologías utilizadas"}
                   </p>
 
                   <div className="flex items-center gap-3 flex-wrap">

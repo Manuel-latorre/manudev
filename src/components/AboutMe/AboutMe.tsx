@@ -16,7 +16,7 @@ const AboutMe = () => {
   const { isEnglish} = useLanguage();
 
   return (
-    <div className='flex flex-col gap-2 lg:w-[70%] w-[90%] mx-auto mt-32'>
+    <div id='aboutme' className='flex flex-col gap-2 lg:w-[70%] w-[90%] mx-auto'>
         <div className='flex flex-col gap-2 max-sm:items-center max-sm:text-center'>
             <h1 className='text-zinc-100 md:text-4xl text-3xl font-bold'>Manuel Latorre</h1>
             <h2 className='bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent md:text-4xl text-3xl font-bold max-sm:text-2xl'>{isEnglish ? "Fullstack Web Developer" : "Desarrollador Web Fullstack"}</h2>
@@ -43,12 +43,10 @@ const AboutMe = () => {
             <RedirectIcon className="hidden group-hover:block" />
           </div>
         </Link>
-        <Link href="https://www.linkedin.com/in/tu-perfil" passHref>
-          <div className="flex items-center group">
+          <a href={`mailto:manuel.latorre11@gmail.com`} title={`Enviar un correo electronico a manuel.latorre11@gmail.com`} target="_blank" rel="noopener noreferrer"  className="flex items-center group">
             <GmailIcon className="group-hover:hidden" />
             <RedirectIcon className="hidden group-hover:block" />
-          </div>
-        </Link>
+          </a>
         <CVIcon className="group-hover:hidden" />
       </div>
         </div>
