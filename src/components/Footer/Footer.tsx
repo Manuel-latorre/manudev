@@ -20,10 +20,10 @@ const Footer = () => {
         </div>
 
         <div className='flex items-center gap-3 text-[#f0f0f0]'>
-        <Link className="text-white font-medium hover:text-zinc-200" href={""}>{isEnglish ? "About me" : "Sobre mi"}</Link>
-        <Link className="text-white font-medium hover:text-zinc-200" href={""}>{isEnglish ? "Experience" : "Experiencia"}</Link>
-        <Link className="text-white font-medium hover:text-zinc-200" href={""}>{isEnglish ? "Skills" : "Habilidades"}</Link>
-        <Link className="text-white font-medium hover:text-zinc-200" href={""}>{isEnglish ? "Contact" : "Contacto"}</Link>
+        <Link className="text-white font-medium hover:text-zinc-200" href={"#aboutme"}>{isEnglish ? "About me" : "Sobre mi"}</Link>
+        <Link className="text-white font-medium hover:text-zinc-200" href={"#experiencec"}>{isEnglish ? "Experience" : "Experiencia"}</Link>
+        <Link className="text-white font-medium hover:text-zinc-200" href={"#skills"}>{isEnglish ? "Skills" : "Habilidades"}</Link>
+        <Link className="text-white font-medium hover:text-zinc-200" href={"#contact"}>{isEnglish ? "Contact" : "Contacto"}</Link>
         </div>
        
         <div className='flex items-center gap-3'>

@@ -16,19 +16,28 @@ const Navbar = () => {
 
   const { isEnglish} = useLanguage();
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -100; // 100px antes de la sección
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
 
   return (
-    <nav className="lg:w-[70%] w-[90%] py-2 px-3 rounded-full flex items-center justify-between mx-auto mt-5 sticky top-5 shadow-md z-10 max-sm:hidden nav">
+    <nav className="lg:w-[70%] w-[90%] py-2 px-3 rounded-full flex items-center justify-between mx-auto fixed top-5 left-0 right-0 z-50 nav">
       
       <div>
         <Image src={avatar} alt="avatar" width={50} height={50} className="hover:rotate-[360deg] transition-all duration-700 cursor-pointer"/>
       </div>
       
       <div className="flex items-center gap-4">
-        <Link className="text-white font-medium hover:text-zinc-200" href="#aboutme">{isEnglish ? "About me" : "Sobre mi"}</Link>
-        <Link className="text-white font-medium hover:text-zinc-200" href="#experience">{isEnglish ? "Experience" : "Experiencia"}</Link>
-        <Link className="text-white font-medium hover:text-zinc-200" href="#skills">{isEnglish ? "Skills" : "Habilidades"}</Link>
-        <Link className="text-white font-medium hover:text-zinc-200" href="#contact">{isEnglish ? "Contact" : "Contacto"}</Link>
+      <a className="text-white font-medium hover:text-zinc-200" href="#aboutme" onClick={(e) => handleScroll(e, 'aboutme')}>{isEnglish ? "About me" : "Sobre mi"}</a>
+        <a className="text-white font-medium hover:text-zinc-200" href="#experience" onClick={(e) => handleScroll(e, 'experience')}>{isEnglish ? "Experience" : "Experiencia"}</a>
+        <a className="text-white font-medium hover:text-zinc-200" href="#skills" onClick={(e) => handleScroll(e, 'skills')}>{isEnglish ? "Skills" : "Habilidades"}</a>
+        <a className="text-white font-medium hover:text-zinc-200" href="#contact" onClick={(e) => handleScroll(e, 'contact')}>{isEnglish ? "Contact" : "Contacto"}</a>
       </div>
 
       <div className="flex items-center gap-3">

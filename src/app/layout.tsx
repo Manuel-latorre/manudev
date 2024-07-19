@@ -11,11 +11,6 @@ import { LanguageProvider } from "@/context/LanguageContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
-/* export const metadata: Metadata = {
-  title: "Manuel Latorre",
-  description: "Desarrollador Web Fullstack",
-}; */
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,17 +20,16 @@ export default function RootLayout({
     <html lang="en">
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta property="og:image" content="https://postimg.cc/zVJCzqRK" />
-      <body className={`${inter.className}`}>
-        <BackgroundGradientAnimation>
-          <div className="absolute z-50 inset-0 overflow-y-scroll scrollPage">
-            <LanguageProvider>
-                <Navbar />
-                <MobileMenu />
-                {children}
-                <Footer />
-            </LanguageProvider>
-          </div>
-        </BackgroundGradientAnimation>
+      <body className={`${inter.className} relative`}>
+        <BackgroundGradientAnimation className="fixed inset-0 z-0" />
+        <div className="relative z-10 min-h-screen overflow-y-auto scrollPage">
+          <LanguageProvider>
+            <Navbar />
+            <MobileMenu />
+            {children}
+            <Footer />
+          </LanguageProvider>
+        </div>
       </body>
     </html>
   );

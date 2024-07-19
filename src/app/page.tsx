@@ -13,10 +13,18 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className='flex flex-col gap-36 sm:my-28 my-12' >
+      <div id='aboutme'>
         <AboutMe/>
+      </div>
+      <div id='experience'>
         <Experience/>
-        <ContactForWork/>
+      </div>
+      <div id='skills'>
         <Stack/>
+      </div>
+      <div id='contact'>
+        <ContactForWork/>
+      </div>
     </div>
   );
 }
