@@ -31,13 +31,13 @@ const AboutMe = () => {
             </div>
 
             <div className="flex items-center gap-3 mt-5">
-        <Link href="https://www.linkedin.com/in/tu-perfil" passHref>
+        <Link href="https://www.linkedin.com/in/manuel-latorre-936b72223/" passHref>
           <div className="flex items-center group">
             <LinkedinOutlineIcon className="group-hover:hidden transition-opacity duration-300" />
             <RedirectIcon className="hidden group-hover:block transition-opacity duration-300" />
           </div>
         </Link>
-        <Link href="https://www.linkedin.com/in/tu-perfil" passHref>
+        <Link href="https://github.com/Manuel-latorre" passHref>
           <div className="flex items-center group">
             <GithubOutlineIcon className="group-hover:hidden" />
             <RedirectIcon className="hidden group-hover:block" />
@@ -47,7 +47,20 @@ const AboutMe = () => {
             <GmailIcon className="group-hover:hidden" />
             <RedirectIcon className="hidden group-hover:block" />
           </a>
-        <CVIcon className="group-hover:hidden" />
+          {isEnglish ?
+          <a href="/Manuel-Latorre-Fullstack-Web-Developer.pdf" download={'Manuel-Latorre-Fullstack-Web-Developer'}>
+            <button>
+              <CVIcon className="group-hover:hidden" />
+            </button>
+          </a>
+          : 
+          <a href="/Manuel-Latorre-Desarrollador-Web-Fullstack.pdf" download={'Manuel-Latorre-Desarrollador-Web-Fullstack'}>
+            <button>
+              <CVIcon className="group-hover:hidden" />
+            </button>
+          </a>
+          }
+        
       </div>
         </div>
     </div>

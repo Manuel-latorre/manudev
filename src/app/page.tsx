@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col gap-36 sm:my-28 my-12' >
         <AboutMe/>
         <Experience/>
         <ContactForWork/>

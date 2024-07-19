@@ -13,7 +13,7 @@ import Meteors from "../magicui/meteors";
 
 const Experience = () => {
   return (
-    <div id="experience" className="lg:w-[70%] w-[90%] mx-auto flex flex-col gap-4 my-32 text-blue-200">
+    <div id="experience" className="lg:w-[70%] w-[90%] mx-auto flex flex-col gap-4 text-blue-200">
       <p className='font-bold text-4xl mb-2'>Experiencia</p>
 
       <div className="w-full flex items-center gap-4 max-lg:flex-col">
