@@ -100,7 +100,7 @@ const CardTma = () => {
                     {isEnglish ? "My biggest challengues" : "Mis mayores desafíos"}
                   </p>
 
-                  <ul className="list-disc">
+                  <ul className="list-disc ml-5">
                     <li>
                      {isEnglish ? "Integrating an effective notification system using React Native Firebase Cloud Messaging." : "Integrar un sistema de notificaciones efectivo mediante React Native Firebase Cloud Messaging."}
                     </li>

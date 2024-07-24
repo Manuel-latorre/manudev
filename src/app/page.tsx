@@ -4,6 +4,7 @@ import ContactForWork from '@/components/ContactForWork/ContactForWork';
 import Experience from '@/components/Experience/Experience';
 import Stack from '@/components/Stack/Stack';
 import { Metadata } from 'next';
+import Form from '@/components/Form/Form';
 
 export const metadata: Metadata = {
   title: "Manuel Latorre",
@@ -22,8 +23,12 @@ export default function Home() {
       <div id='skills'>
         <Stack/>
       </div>
-      <div id='contact'>
+      <div>
         <ContactForWork/>
+      </div>
+
+      <div id='contact'>
+        <Form/>
       </div>
     </div>
   );

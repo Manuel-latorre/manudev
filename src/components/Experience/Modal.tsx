@@ -24,7 +24,7 @@ const Modal = ({ description}: Props) => {
         {isEnglish ? "About the position" : "Acerca del puesto"}
         <MaximizeIcon width={18} height={18} />
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="h-auto">
         <DialogHeader>
           <DialogDescription>{description}</DialogDescription>
         </DialogHeader>

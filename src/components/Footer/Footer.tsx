@@ -39,8 +39,6 @@ const Footer = () => {
                     <RedirectIcon className="hidden group-hover:block" />
                 </a>
         </div>
-       
-    <Form/>
     </div>
   )
 }

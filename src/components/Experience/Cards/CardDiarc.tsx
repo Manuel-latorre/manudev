@@ -97,7 +97,7 @@ const CardDiarc = () => {
                     {isEnglish ? "My biggest challengues" : "Mis mayores desafíos"}
                   </p>
 
-                  <ul className="list-disc">
+                  <ul className="list-disc ml-5">
                     <li>
                         {isEnglish ? "Successfully executing the client's ideas." : "Llevar a cabo correctamente las idéas del cliente."}
                     </li>

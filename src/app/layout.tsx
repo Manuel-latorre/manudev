@@ -1,6 +1,6 @@
 "use client"
 
-import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
@@ -27,6 +27,7 @@ export default function RootLayout({
             <Navbar />
             <MobileMenu />
             {children}
+            <Toaster />
             <Footer />
           </LanguageProvider>
         </div>
