@@ -10,6 +10,7 @@ import LinkedinIcon from '../icons/LinkedinIcon'
 import RedirectIcon from '../icons/RedirectIcon'
 import GithubIcon from '../icons/GithubIcon'
 import { useLanguage } from '@/context/LanguageContext'
+import Form from '../Form/Form'
 
 const Footer = () => {
     const {isEnglish} = useLanguage()
@@ -22,7 +23,7 @@ const Footer = () => {
         <div className='flex items-center gap-3 text-[#f0f0f0]'>
         <Link className="text-white font-medium hover:text-zinc-200" href={"#aboutme"}>{isEnglish ? "About me" : "Sobre mi"}</Link>
         <Link className="text-white font-medium hover:text-zinc-200" href={"#experiencec"}>{isEnglish ? "Experience" : "Experiencia"}</Link>
-        <Link className="text-white font-medium hover:text-zinc-200" href={"#skills"}>{isEnglish ? "Skills" : "Habilidades"}</Link>
+        <Link className="text-white font-medium hover:text-zinc-200" href={"#skills"}>{isEnglish ? "Technologies" : "Tecnologías"}</Link>
         <Link className="text-white font-medium hover:text-zinc-200" href={"#contact"}>{isEnglish ? "Contact" : "Contacto"}</Link>
         </div>
        
@@ -39,7 +40,7 @@ const Footer = () => {
                 </a>
         </div>
        
-
+    <Form/>
     </div>
   )
 }

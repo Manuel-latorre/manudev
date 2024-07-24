@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="lg:w-[70%] w-[90%] py-2 px-3 rounded-full flex items-center justify-between mx-auto fixed top-5 left-0 right-0 z-50 nav">
+    <nav className="lg:w-[70%] w-[90%] py-2 px-3 rounded-full flex items-center justify-between mx-auto fixed top-5 left-0 right-0 z-50 nav max-sm:hidden">
       
       <div>
         <Image src={avatar} alt="avatar" width={50} height={50} className="hover:rotate-[360deg] transition-all duration-700 cursor-pointer"/>
@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
       <a className="text-white font-medium hover:text-zinc-200" href="#aboutme" onClick={(e) => handleScroll(e, 'aboutme')}>{isEnglish ? "About me" : "Sobre mi"}</a>
         <a className="text-white font-medium hover:text-zinc-200" href="#experience" onClick={(e) => handleScroll(e, 'experience')}>{isEnglish ? "Experience" : "Experiencia"}</a>
-        <a className="text-white font-medium hover:text-zinc-200" href="#skills" onClick={(e) => handleScroll(e, 'skills')}>{isEnglish ? "Skills" : "Habilidades"}</a>
+        <a className="text-white font-medium hover:text-zinc-200" href="#skills" onClick={(e) => handleScroll(e, 'skills')}>{isEnglish ? "Technologies" : "Tecnologías"}</a>
         <a className="text-white font-medium hover:text-zinc-200" href="#contact" onClick={(e) => handleScroll(e, 'contact')}>{isEnglish ? "Contact" : "Contacto"}</a>
       </div>
 
