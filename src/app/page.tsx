@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 import Form from '@/components/Form/Form';
 
 export const metadata: Metadata = {
-  title: "Manuel Latorre",
+  title: "Manuel Latorre | Fullstack Web Developer",
   description: "Desarrollador Web Fullstack",
 };
 

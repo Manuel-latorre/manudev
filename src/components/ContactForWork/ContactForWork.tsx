@@ -36,13 +36,13 @@ const ContactForWork = () => {
           
         </Link>
 
-        <Link href={""} className="text-center text-2xl font-bold capitalize cursor-pointer hover:scale-105 transition-all nav p-3 rounded-xl w-[300px]">
-            <div className="flex items-center gap-2 text-white font-medium justify-center">
+        <div className="text-center text-2xl font-bold capitalize cursor-pointer hover:scale-105 transition-all nav p-3 rounded-xl w-[300px]">
+            <a href={`mailto:manuel.latorre11@gmail.com`} title={`Enviar un correo electronico a manuel.latorre11@gmail.com`} target="_blank" rel="noopener noreferrer"   className="flex items-center gap-2 text-white font-medium justify-center">
                 <p>Gmail</p>
                 <EmailIcon />
-            </div>
+            </a>
            
-        </Link>
+        </div>
       </div>
       
     </div>

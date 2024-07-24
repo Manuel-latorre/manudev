@@ -20,7 +20,7 @@ import { useLanguage } from '@/context/LanguageContext'
 const Stack = () => {
     const {isEnglish} = useLanguage()
   return (
-    <div className='lg:w-[70%] w-[90%] flex flex-col gap-4 mx-auto '>
+    <div className='lg:w-[70%] w-[90%] flex flex-col gap-4 mx-auto'>
         <p className='font-bold text-4xl mb-2 text-blue-200'>{isEnglish ? "Technologies" : "Tecnologías"}</p>
         <div className='flex flex-col justify-center gap-4 max-lg:hidden'>
             <div className='flex items-center gap-4 max-lg:flex-wrap'>
